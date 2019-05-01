@@ -2,43 +2,26 @@
 <html>
 	<head>
 		<title>Game Store</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
+		<link rel="stylesheet" href="Css/navbar.css">
+		<script src="jquery-3.3.1.js"></script>
+</head>
 
 	<body bgcolor="#222">
-		<div class="navbar">
-			<div class="navbar-menu">
-				<a href="#" onClick="openNav()">Products</a>
-				<a href="#">Special Offer</a>
-				<a href="#">Account</a>
-				<a href="#">About</a>
-				<a href="#">Customer Service</a>
-			</div>
-			<div id="expand"  class="navbar-menu-content">
-				<div class="navbar-menu-content-item">
-				<a href="#" class="closebtn" onClick="closeNav()">&times;</a>
-				<a href="#">	<img src="Assets/Icons/mouse.jpg">	</a>
-				<a href="#">	<img src="Assets/Icons/keyboard.jpg">	</a>
-				<a href="#">	<img src="Assets/Icons/mousepad.jpg">	</a>
-				<a href="#">	<img src="Assets/Icons/gamepad.jpg">	</a>
-				<a href="#">	<img src="Assets/Icons/headset.jpg">	</a>
-				</div>
-				<div class="bottom-menu"><a href="#">	<img src="Assets/Icons/navigation-promo-banner-desktop.jpg.imgw.2400.2400.jpeg" width="100%" height="100%">	</a></div>
-				
-			</div>
-		</div>
-		<script>
-			function openNav() {
-			document.getElementById("expand").style.width = "100%";
-			}
-			
-			function closeNav() {
-			document.getElementById("expand").style.width = "0%";
-			}
-		</script>
 		
-		<div class="content">
+<!--		Navigation Bar -->
+		<div id="navbar-placeholder">
+	</div>
+		
+		<script>
+			$(function(){
+  				$("#navbar-placeholder").load("navbar.html");
+			});
+		</script>
+<!--	End of Navigation Bar	-->
+		
+	<div class="content">
 			<img src="Assets/Product/Welcome.jpg" width="100%" height="90%">
+			
 			
 		</div>
 		
