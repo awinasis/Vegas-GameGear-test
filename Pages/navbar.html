@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="Css/navbar.css">
+<div class="navbar">
+			<div class="navbar-menu">
+				<a href="index.html">Home</a>
+				<a href="#" onClick="openNav()">Products</a>
+				<a href="#">Special Offer</a>
+				<a href="Account.html">Account</a>
+				<a href="Login/index.php">Admin</a>
+				<a href="#">Customer Service</a>
+			</div>
+			<div id="expand"  class="navbar-menu-content">
+				<div class="navbar-menu-content-item">
+				<a href="#" class="closebtn" onClick="closeNav()">&times;</a>
+				<a href="Category - Mouse.html">	<img src="Assets/Icons/mouse.png">	</a>
+				<a href="Category - Keyboard.html">	<img src="Assets/Icons/keyboard.png">	</a>
+				<a href="Category - Headset.html">	<img src="Assets/Icons/headset.png">	</a>
+				<a href="Category - Gamepad.html">	<img src="Assets/Icons/gamepad.png">	</a>
+				<a href="#">	<img src="Assets/Icons/headset.png">	</a>
+				</div>
+				<div class="bottom-menu"><a href="#">	<img src="Assets/Icons/bottom-menu.png" width="100%" height="100%">	</a></div>
+				
+			</div>
+		</div>
+		<script>
+			function openNav() {
+			document.getElementById("expand").style.width = "100%";
+			}
+			
+			function closeNav() {
+			document.getElementById("expand").style.width = "0%";
+			}
+		</script>

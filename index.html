@@ -2,8 +2,53 @@
 <html>
 	<head>
 		<title>Game Store</title>
-		<link rel="stylesheet" href="Css/navbar.css">
 		<script src="jquery-3.3.1.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/navbar.css">
+		<link rel="stylesheet" type="text/css" href="css/effect.css">
+
+	<style type="text/css">
+		@font-face{
+		font-family: Titilium;
+		src: url(../Assets/Font/TitilliumWeb-Light.ttf);
+		}
+		body{
+		font-family: Titilium;
+		color: #C4C4C4;
+
+		}
+		
+
+		.card-list{
+			padding: 10px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+
+		.product-card{
+			width: 320px;
+			height: 450px;
+			display: flex;
+			flex-direction: column;
+			border: solid 2px #0f0;
+		}
+
+		.product-card-top{
+			height: 300px;
+			width: 100%;
+			border-bottom: solid 2px #0f0;
+
+		}
+
+		.product-card-bottom{
+			height: 100%;
+			border-bottom: solid 2px #0f0;
+			padding-top: 10px;
+			padding-left: 10px;
+			background: black;
+		}
+	</style>
 </head>
 
 	<body bgcolor="#222">
@@ -14,16 +59,74 @@
 		
 		<script>
 			$(function(){
-  				$("#navbar-placeholder").load("navbar.html");
+  				$("#navbar-placeholder").load("pages/navbar.html");
 			});
+			
 		</script>
 <!--	End of Navigation Bar	-->
+<div class="content">
+
+
+<!--    Slideshow 				-->
+<iframe src="slider.html" style="width:1368px;height:768px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!--    End of Slideshow 		-->
+
+<!--   Product Card		-->
+<div class="card-list" style="padding-bottom: 10px;">
+<div class="product-card">
+	<div class="product-card-top" style="background: black">
+		<img src="Assets/product/Wolverine-Ultimate-Base.png">
+	</div>
+	<div class="product-card-bottom">
+		<h3> Razer Wolverine Ultimate Edition</h3>
+		<h5><strike>Rp. 1.400.000</strike></h5>
+		<h5 style="background: red; width: 150px">ON SALE : Rp. 999.000</h5>
+	</div>
+</div>
+
+<div class="product-card">
+	<div class="product-card-top" style="background: black">
+		<img src="Assets/product/g305-gallery-1.png.imgw.902.902.png" width="300px" style="padding-top: 40px">
+	</div>
+	<div class="product-card-bottom">
+		<h3> Logitech G305</h3>
+		<h5><strike>Rp. 1.100.000</strike></h5>
+		<h5 style="background: red; width: 150px">ON SALE : Rp. 800.000</h5>
+	</div>
+</div>
+
+<div class="product-card">
+	<div class="product-card-top" style="background: black">
+		<img src="Assets/product/BlackWidow-Ultimate-2017-Base.png">
+	</div>
+	<div class="product-card-bottom">
+		<h3> Razer BlackWidow Ultimate Edition</h3>
+		<h5><strike>Rp. 1.800.000</strike></h5>
+		<h5 style="background: red; width: 150px">ON SALE : Rp. 1.500.000</h5>
+	</div>
+</div>
+
+<!--   End of Product Card		-->
+
+</div>
+
+<div class="parallax-home2"></div>
+<img src="Assets/Wallpaper/Splash.jpg">
+
+
+</div>
+
+<!--		Footer -->
+		<div id="footer-placeholder">
+	</div>
 		
-	<div class="content">
-			<img src="Assets/Product/Welcome.jpg" width="100%" height="90%">
+		<script>
+			$(function(){
+  				$("#footer-placeholder").load("pages/footer.html");
+			});
 			
-			
-		</div>
+		</script>
+<!--	End of Footer	-->
 		
 	</body>
 </html>

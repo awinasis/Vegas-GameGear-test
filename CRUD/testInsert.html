@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <script src="jquery-3.3.1.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <style>
+        body{
+            font-family: sans-serif;
+            color: #4392F1 ;
+            border: 2px solid #4392F1;
+        }
+
+        .table_insert{
+            margin-left: 430px;
+        }
+        </style>
+        <h1 style="text-align: center">Admin Panel</h1>
+    <table class="table_insert">
+        <form action="testInsertProses.php" method="POST" enctype="multipart/form-data">
+            <tr>
+                <td>Merk : </td>
+                    <td>
+                        <select name="merk">
+                            <option value="Logitech">Logitech</option>
+                            <option value="Razer">Razer</option>
+                            <option value="Digital Alliance">Digital Alliance</option>
+                        </select>
+                    </td>
+                </tr>
+            <tr>
+            <tr>
+                <td>Nama Barang : </td>
+                <td><input type="text" name="nama_barang"></td>
+            <tr>
+                <td>Kategori : </td>
+                <td>
+                    <select name="kategori">
+                        <option value="Mouse">Mouse</option>
+                        <option value="Keyboard">Keyboard</option>
+                        <option value="Headset">Headset</option>
+                        <option value="Mousepad">Mousepad</option>
+                        <option value="Gamepad">Gamepad</option>
+
+                    </select>
+                </td>
+            </tr>
+             </tr>
+                <td>Harga (Rp) : </td>
+                <td><input type="text" name="harga"></td>
+            </tr>
+            <tr>
+                <td>Gambar Produk : </td>
+                <td><input type="file" name="image_name"></td>
+            </tr>
+            <tr>
+                <td><button type="submit" name="kirim">kirim</button>
+                </td>
+            </tr>
+
+        </form>
+    </table><br>
+
+
+        <div id="isi_data"></div>
+        <script>
+            $(function() {
+                $("#isi_data").load("selectTableTest.php");
+            });
+        </script>
+
+    </body>
+</html>

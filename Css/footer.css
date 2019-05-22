@@ -1,0 +1,16 @@
+@font-face{
+	font-family: Titilium;
+	src: url(../Assets/Font/TitilliumWeb-Light.ttf);
+}
+
+#footer{
+	width: 100%;
+	height: 300px;
+	background-color: black;
+}
+
+.footer-content{
+	font-family: Titilium;
+	color: white;
+	padding-left: 500px;
+}
