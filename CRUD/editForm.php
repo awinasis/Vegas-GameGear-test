@@ -1,7 +1,7 @@
 <html>
     <head>
     </head>
-    <body>
+    <body style="background: url('../Assets/Wallpaper/admin-panel.jpg');">
     <style>
         body{
             display : flex;
