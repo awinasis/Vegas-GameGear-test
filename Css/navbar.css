@@ -1,0 +1,78 @@
+@font-face{
+	font-family: Titilium;
+	src: url(../Assets/Font/TitilliumWeb-Light.ttf);
+}
+
+#navbar-placeholder{
+	padding: 0;
+	margin: 0;
+	font-family: Titilium;
+	overflow: hidden;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.navbar{
+	display: flex;
+	flex-direction: column;
+	background-color: #1B1919;
+	justify-content: center;
+	padding: 8px 8px 8px 8px;
+	
+}
+
+.navbar-menu{
+	display: flex;
+	justify-content: center;	
+}
+
+.navbar-menu a{
+	color: #C4C4C4;
+	text-decoration: none;
+	padding-right: 50px;
+}
+
+.navbar-menu a:hover{
+	color: #585455;
+}
+
+
+.navbar-menu-content{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width:  0%;
+  position: fixed;
+  z-index: 1;
+  top: 40px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 150px;
+}
+
+.navbar-menu-content-item{
+	display: flex;
+	justify-content: space-around;
+}
+
+.navbar-menu-content .bottom-menu{
+	padding-top: 100px;
+}
+
+.navbar-menu-content .closebtn{
+  position: absolute;
+  top: 0;
+  right: 0px;
+  
+  text-decoration: none;
+}

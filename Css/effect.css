@@ -1,0 +1,17 @@
+.parallax-home {
+  background-image: url("../Assets/wallpaper/Splash.jpg");
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-home2 {
+  background-image: url("../Assets/wallpaper/Splash2.jpg");
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

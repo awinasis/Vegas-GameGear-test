@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Game Store</title>
+		<link rel="stylesheet" href="Css/navbar.css">
+	</head>
+
+	<body bgcolor="#222">
+		<div class="navbar">
+			<div class="navbar-menu">
+				<a href="#" onClick="openNav()">Products</a>
+				<a href="#">Special Offer</a>
+				<a href="#">Account</a>
+				<a href="#">About</a>
+				<a href="#">Customer Service</a>
+			</div>
+			<div id="expand"  class="navbar-menu-content">
+				<div class="navbar-menu-content-item">
+				<a href="#" class="closebtn" onClick="closeNav()">&times;</a>
+				<a href="#">	<img src="Assets/Icons/mouse.png">	</a>
+				<a href="#">	<img src="Assets/Icons/keyboard.png">	</a>
+				<a href="#">	<img src="Assets/Icons/mousepad.png">	</a>
+				<a href="#">	<img src="Assets/Icons/gamepad.png">	</a>
+				<a href="#">	<img src="Assets/Icons/headset.png">	</a>
+				</div>
+				<div class="bottom-menu"><a href="#">	<img src="Assets/Icons/bottom-menu.png" width="100%" height="100%">	</a></div>
+				
+			</div>
+		</div>
+		<script>
+			function openNav() {
+			document.getElementById("expand").style.width = "100%";
+			}
+			
+			function closeNav() {
+			document.getElementById("expand").style.width = "0%";
+			}
+		</script>
+		
+		<div class="content">
+			<img src="Assets/Product/Welcome.jpg" width="100%" height="90%">
+			
+		</div>
+		
+	</body>
+</html>

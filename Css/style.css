@@ -1,0 +1,32 @@
+
+.content{
+	padding-top: 0px;
+	display: flex;
+	flex-direction: column;
+}
+
+.content .title{
+	align-self: center;
+	font-size: 60;
+	color: #35d62c;
+}
+
+.content .desc{
+	align-self: center;
+}
+
+.product-card{
+	width: 320px;
+	height: 450px;
+	display: flex;
+	flex-direction: row;
+}
+
+.product-card-top{
+	height: 300px;
+}
+
+.product-card-bottom{
+	border-bottom: solid 2px #0f0;
+
+}
