@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <script src="jquery-3.3.1.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: sans-serif;
+            color: #4392F1 ;
+            border: 2px solid #4392F1;
+            background: url('../Assets/Wallpaper/Register.jpg');
+        }
+
+        .table_insert{
+            
+            width: 500px;
+        }
+
+        </style>
+        <h1 style="text-align: center">User Control</h1>
+    <div class="box">
+        <table class="table_insert">
+            <form action="register_proses.php" method="POST" enctype="multipart/form-data">
+                <tr>
+                    <td>Username : </td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>Password : </td>
+                    <td><input type="text" name="password"></td>
+                </tr>
+                <tr>
+                    <td>Email : </td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Privilege : </td>
+                    <td><input type="text" name="privilege"></td>
+                </tr>
+                <tr>
+                    <td><a href="../CRUD/testInsert.html"><button type="button" name="pindah">Admin Panel</button></a></td>
+                    <td colspan="2"><button type="submit" name="kirim">kirim</button>
+                    </td>
+                </tr>
+
+            </form>
+        </table>
+    </div>
+
+
+        <div id="isi_data"></div>
+        <script>
+            $(function() {
+                $("#isi_data").load("selectTableTest.php");
+            });
+        </script>
+
+    </body>
+</html>

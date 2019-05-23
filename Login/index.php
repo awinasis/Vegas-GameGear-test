@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Form Login PhP mysql</title>
+	<title>Login</title>
 
 	<style>
 		body{
@@ -36,7 +36,12 @@
 		}
 
 		input[type='submit']{
-			width: 70px;
+			width: 90px;
+			height: 50px;
+		}
+
+		input[type='button']{
+			width: 85px;
 			height: 50px;
 		}
 
@@ -46,6 +51,7 @@
 <body style="background: url('../Assets/Wallpaper/Welcome-clear.jpg');">
 	
 	<div class="outer-box">
+		<h1 align="center" style="color: white">Login</h1>
 		<div class="box">
 			<form action="proses.php" method="post">
 				<table>
@@ -56,7 +62,8 @@
 						<td colspan="2"><input type="password" name="password" placeholder="password"></td>
 					</tr>
 					<tr>
-						<td colspan="2"><input type="submit" value="masuk" style="margin-left: 55px"></td>
+						<td><input type="submit" value="masuk" ></td>
+						<td><a href="register.php"><input type="button" value="Register" ></a></td>
 					</tr>
 				</table>
 			</form>
